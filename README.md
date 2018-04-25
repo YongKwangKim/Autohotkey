@@ -44,16 +44,16 @@ pmsg.AddAttachment(attachFile)  ; 첨부파일
 ; 필드 오브젝트 생성
 fields := Object()
 
-fields.smtpserver := "smtp.gmail.com"   ; 구  글 SMTP
-fields.smtpserver := "smtp.daum.net"    ; 다  음 SMTP
-fields.smtpserver := "smtp.naver.com"   ; 네이버 SMTP		  ! 발신자 이메일에 맞는 SMTP 서버사용
-fields.smtpserverport := 465    ; 보안연결(SSL)필요	! 네이버, 구글, 다음 공통
-fields.smtpusessl := True   ; False
-fields.sendusing  := 2      ; cdoSendUsingPort
-fields.smtpauthenticate := 1    ; cdoBasic
-fields.sendusername := sender   ; 보내는 계정 아이디
-fields.sendpassword := pass   ; 보내는 계정 비밀번호
-fields.smtpconnectiontimeout  := 60   ; 통신 타임아웃
+fields.smtpserver       := "smtp.gmail.com"   ; 구  글 SMTP
+fields.smtpserver       := "smtp.daum.net"    ; 다  음 SMTP
+fields.smtpserver       := "smtp.naver.com"   ; 네이버 SMTP        ! 발신자 이메일에 맞는 SMTP 서버사용
+fields.smtpserverport   := 465                ; 보안연결(SSL)필요   ! 네이버, 구글, 다음 공통
+fields.smtpusessl       := True               ; False
+fields.sendusing        := 2                  ; cdoSendUsingPort
+fields.smtpauthenticate := 1                  ; cdoBasic
+fields.sendusername     := sender             ; 보내는 계정 아이디
+fields.sendpassword     := pass               ; 보내는 계정 비밀번호
+fields.smtpconnectiontimeout  := 60           ; 통신 타임아웃
 schema  := "http://schemas.microsoft.com/cdo/configuration/"
 
 ; 메일 세팅 업데이트
