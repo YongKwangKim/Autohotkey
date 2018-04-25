@@ -36,4 +36,18 @@ driver.addArgument( "--headless" )	; 크롬창 숨기기
 ```
 더욱 다양한 커맨드값들은 [다음](https://peter.sh/experiments/chromium-command-line-switches/)사이트에 자세히 기술되어 있습니다.
 
-### 
+### driver.get
+구글크롬을 원하는 URL 로 이동시킵니다.
+```ahk
+driver.Get( "https://www.example.com" )
+```
+### 웹페이지 제어
+`HTML TAG` 요소를 사용하여 웹페이지를 제어합니다.
+```ahk
+; ID 값을 사용한 웹제어
+driver.findElementByID( "idName" )
+
+; Class 값을 사용한 웹제어
+driver.findElementsByClassName( "className" ).item["번호"]
+```
+
