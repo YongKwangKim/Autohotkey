@@ -11,6 +11,18 @@ Selenium Basic을 통한 브라우져 제어
 ## WinHTTP 통신
 winHttp를 통한 웹 파싱
 
+```ahk
+; ComObj 생성 - WinHttp 
+WinHttp := ComObjCreate( "WinHttp.WinHttpRequest.5.1" )
+WinHttp.Open( "GET", RequestURL )
+WinHttp.SetRequestHeader( "Referer", ReferrerURL )
+WinHttp.Send()
+WinHttp.WaitForResponse( 90 )
+ResponseText := WinHttp.ResponseText
+WinHttp := 0
+return
+```
+
 ## CDO.Message
 SMTP 방식의 이메일 보내기
 
