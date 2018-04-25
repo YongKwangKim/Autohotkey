@@ -6,13 +6,7 @@
 3. CDO.Message
 
 ## Selenium WebDriver
-> Selenium Basic을 통한 브라우져 제어
-- Selenium 제어문법
-  - 기본
-  - Xpath
-  - JS
-  - iFrame 제어
-  - 
+Selenium Basic을 통한 브라우져 제어 
 
 ## WinHTTP 통신
 winHttp를 통한 웹 파싱
