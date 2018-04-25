@@ -1,0 +1,8 @@
+# Selenium WebDriver
+
+> Selenium Basic API를 사용한 웹브라우저 제어
+본래 Visual Basic Applications, VBScript, VB.Net 프레임워크를 위한 웹브라우저 자동화 API 이지만 오토핫키에서도 지원합니다.
+
+## Selenium Basic 설치하기
+
+셀레늄 베이직을 설치하기 위해선 [다음](https://github.com/florentbr/SeleniumBasic/releases/tag/v2.0.9.0)의 사이트에 방문하여 최신 Selenium Basic 을 다운받습니다.
